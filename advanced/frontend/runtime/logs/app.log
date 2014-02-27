@@ -1,0 +1,120 @@
+2014/02/27 12:30:10 [::1] [error] [yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/Connection.php:360
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/Connection.php(360): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/Connection.php(316): yii\db\Connection->createPdoInstance()
+#2 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/Connection.php(390): yii\db\Connection->open()
+#3 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/ActiveQuery.php(247): yii\db\Connection->createCommand('SELECT * FROM {...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/ActiveQuery.php(219): yii\db\ActiveQuery->createCommandInternal(NULL)
+#5 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/ActiveQuery.php(177): yii\db\ActiveQuery->createCommand(NULL)
+#6 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(140): yii\db\ActiveQuery->one()
+#7 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/common/models/User.php(82): yii\db\BaseActiveRecord::find(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/common/models/LoginForm.php(69): common\models\User::findByUsername('frontoffice')
+#9 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/common/models/LoginForm.php(40): common\models\LoginForm->getUser()
+#10 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/validators/InlineValidator.php(66): call_user_func(Array, 'password', NULL)
+#12 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/validators/Validator.php(189): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#13 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/Model.php(324): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/common/models/LoginForm.php(54): yii\base\Model->validate()
+#15 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/frontend/controllers/SiteController.php(72): common\models\LoginForm->login()
+#16 [internal function]: frontend\controllers\SiteController->actionLogin()
+#17 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/InlineAction.php(53): call_user_func_array(Array, Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/Controller.php(128): yii\base\InlineAction->runWithParams(Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Controller->runAction('login', Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/web/Application.php(85): yii\base\Module->runAction('site/login', Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/Application.php(289): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#23 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/Connection.php:321
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/Connection.php(390): yii\db\Connection->open()
+#1 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/ActiveQuery.php(247): yii\db\Connection->createCommand('SELECT * FROM {...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/ActiveQuery.php(219): yii\db\ActiveQuery->createCommandInternal(NULL)
+#3 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/ActiveQuery.php(177): yii\db\ActiveQuery->createCommand(NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(140): yii\db\ActiveQuery->one()
+#5 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/common/models/User.php(82): yii\db\BaseActiveRecord::find(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/common/models/LoginForm.php(69): common\models\User::findByUsername('frontoffice')
+#7 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/common/models/LoginForm.php(40): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#9 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/validators/InlineValidator.php(66): call_user_func(Array, 'password', NULL)
+#10 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/validators/Validator.php(189): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#11 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/Model.php(324): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/common/models/LoginForm.php(54): yii\base\Model->validate()
+#13 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/frontend/controllers/SiteController.php(72): common\models\LoginForm->login()
+#14 [internal function]: frontend\controllers\SiteController->actionLogin()
+#15 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/InlineAction.php(53): call_user_func_array(Array, Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/Controller.php(128): yii\base\InlineAction->runWithParams(Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Controller->runAction('login', Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/web/Application.php(85): yii\base\Module->runAction('site/login', Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/vendor/yiisoft/yii2/base/Application.php(289): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/frontend/web/index.php(17): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2014/02/27 12:30:10 [::1] [info] [application] $_GET = array (
+  'r' => 'site/login',
+)
+
+$_POST = array (
+  '_csrf' => 'RUR1ck56OG5xFEQ/BRxZFAozRggWDEAHDQ9GKgMeWhomfDkcIA0BGw==',
+  'LoginForm' => 
+  array (
+    'username' => 'frontoffice',
+    'password' => 'frontoffice',
+    'rememberMe' => '1',
+  ),
+  'login-button' => '',
+)
+
+$_COOKIE = array (
+  'PHPSESSID' => 'ftgg0h4msr6dpvo7iuo8qmppj0',
+  '_csrf' => '9333a86b2c31395db63eae85700eacffa921392178ef2d567f266fe361827bbds:32:"4P1MKfazOw3zXvxiHK3XMdbtc8Lnnw9u";',
+)
+
+$_SESSION = array (
+  '__flash' => 
+  array (
+  ),
+  '__captcha/site/captcha' => 'jzsurob',
+  '__captcha/site/captchacount' => 1,
+)
+
+$_SERVER = array (
+  'UNIQUE_ID' => 'Uw8hwsCoAWYAACPVu-cAAAAM',
+  'HTTP_HOST' => 'localhost',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'CONTENT_LENGTH' => '210',
+  'HTTP_CACHE_CONTROL' => 'max-age=0',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'HTTP_ORIGIN' => 'http://localhost',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36',
+  'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+  'HTTP_REFERER' => 'http://localhost/leisure/advanced/frontend/web/index.php?r=site/login',
+  'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch',
+  'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6',
+  'HTTP_COOKIE' => 'PHPSESSID=ftgg0h4msr6dpvo7iuo8qmppj0; _csrf=9333a86b2c31395db63eae85700eacffa921392178ef2d567f266fe361827bbds%3A32%3A%224P1MKfazOw3zXvxiHK3XMdbtc8Lnnw9u%22%3B',
+  'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+  'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib',
+  'SERVER_SIGNATURE' => '',
+  'SERVER_SOFTWARE' => 'Apache/2.4.4 (Unix) PHP/5.5.3 OpenSSL/1.0.1e mod_perl/2.0.8-dev Perl/v5.16.3',
+  'SERVER_NAME' => 'localhost',
+  'SERVER_ADDR' => '::1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '::1',
+  'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs',
+  'REQUEST_SCHEME' => 'http',
+  'CONTEXT_PREFIX' => '',
+  'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs',
+  'SERVER_ADMIN' => 'you@example.com',
+  'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/leisure/advanced/frontend/web/index.php',
+  'REMOTE_PORT' => '64366',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'POST',
+  'QUERY_STRING' => 'r=site/login',
+  'REQUEST_URI' => '/leisure/advanced/frontend/web/index.php?r=site/login',
+  'SCRIPT_NAME' => '/leisure/advanced/frontend/web/index.php',
+  'PHP_SELF' => '/leisure/advanced/frontend/web/index.php',
+  'REQUEST_TIME_FLOAT' => 1393500610.364,
+  'REQUEST_TIME' => 1393500610,
+)
