@@ -17,8 +17,11 @@ $this->title = 'My Yii Application';
 	<div class="body-content">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<?php echo "NOTHING"; ?>
 =======
+=======
+>>>>>>> 932708dce0c3ac8c819628b1884a7b1180b2d1df
 		<div class="row">
 			<div class="col-lg-4">
 				<h2>Heading</h2>
@@ -51,7 +54,10 @@ $this->title = 'My Yii Application';
 				<p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
 			</div>
 		</div>
+<<<<<<< HEAD
 >>>>>>> 2b39c54ed913a96f3a9dcfdf1fce8de13f0da94c
+=======
+>>>>>>> 932708dce0c3ac8c819628b1884a7b1180b2d1df
 
 	</div>
 </div>
