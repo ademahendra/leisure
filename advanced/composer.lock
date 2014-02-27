@@ -166,12 +166,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "7b386a566f6f199698f200d9dff4b8cf5da3ed07"
+                "reference": "4d527f925109a75ab88ff8ec811b781190372506"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/7b386a566f6f199698f200d9dff4b8cf5da3ed07",
-                "reference": "7b386a566f6f199698f200d9dff4b8cf5da3ed07",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/4d527f925109a75ab88ff8ec811b781190372506",
+                "reference": "4d527f925109a75ab88ff8ec811b781190372506",
                 "shasum": ""
             },
             "type": "library",
@@ -200,7 +200,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2014-02-26 03:40:15"
+            "time": "2014-02-27 08:58:27"
         },
         {
             "name": "yiisoft/jquery",
