@@ -16,7 +16,7 @@ $this->title = 'Halo Mas Ade !!!!!!!!!';
 
 	<div class="body-content">
 
-	
+	<?php echo "NOTHING"; ?>
 
 	</div>
 </div>
